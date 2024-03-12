@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import "../../scss/mixin.scss";
+
+
+// #f1ebd6; #f6f6f6;
+
+
+#header{
+  .header_bg{
+    background-color: #f1ebd6;
+    .header_ct{
+      width: 1280px;
+      margin: 0 auto;
+      > h1{
+        >a{
+          img{
+
+          }
+        }
+      }
+      .utill{
+        .depth_01{
+          >li{
+            >a{
+              >span{}
+            }
+            .depth_02{
+              >li{
+                >a{
+
+                }
+              }
+            }
+          }
+        }
+      }
+      nav{
+        >ul{
+          >li{
+            a{
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

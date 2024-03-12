@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+  text-decoration: none;
+}
+ul,ol,dl{
+  list-style: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#header{
+  background-color: #fff;
+  position: relative;
+}
+
+#header div{
+  width: 1280px;
+  margin: 0 auto;
+
+}
+
+#header div::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#header div h1{
+  float: left;
+  margin: 20px 0 20px 36px;
+}
+
+#header div h1 a{
+  display: block;
+  width: 50px;
+}
+
+#header div nav{
+  float: right;
+  margin: 40px 0 0 0;
+}
+
+
+#header div nav .first:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#header div nav .fir_st{
+  width: 700px;
+}
+
+#header div nav .fir_st > li{
+  float: left;
+  width: 16.66%;
+  position: relative;
+}
+
+#header div nav .fir_st > li:hover > a{
+  background-color: #bdbcbd;
+  color: #000;
+}
+
+#header div nav .fir_st > li > a{
+  display: block;
+  text-align: center;
+  width: 100%;
+  line-height: 50px;
+  color: #000;
+  background-color: #fff;
+  transition:0.52s;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px #ccc solid;
+}
+
+#header .tw_o{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 0;
+  transition: 1s;
+  overflow: hidden;
+  z-index: 5;
+}
+
+#header .tw_o li a{
+  font-size: 15px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+  display: block;
+}
+
+#header > div nav .fir_st:hover .tw_o{
+  height: 255px;
+}
+
+#header .tw_o li:hover a{
+  background-color: #bdbcbd;
+  color: #0f098a;
+}

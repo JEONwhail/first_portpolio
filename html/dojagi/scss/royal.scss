@@ -1,0 +1,1281 @@
+@charset "UTF-8";
+@import "../../scss/mixin.scss";
+
+
+.content{
+  margin: 0 auto;
+  width: 1280px;
+}
+
+#full_page{
+  margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#body{
+  .body_full{
+    .slick-prev{
+      left: 0;
+    }
+    .slick-next{
+      right: 0;
+      display: none;
+      color: #000;
+    }
+
+  }
+}
+
+#full_page{
+  #header{
+    .utill_bg{
+      background-color: #474648;
+      width: 100%;
+    }
+    .utill{
+      width: 1280px;
+      margin: 30px auto 0;
+      &::after{
+        @include clear;
+      }
+      >ul{
+        float: right;
+        >li{
+          float: left;
+
+          >a{
+            display: block;
+            color: #6d6b6d;
+            line-height: 20px;
+            font-family: 'NEXON Lv1 Gothic OTF';
+            font-size: 11px;
+            >span{
+              display: inline-block;
+              width: 2px;
+              height: 8px;
+              background-color: #ddd;
+              margin: 0 5px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#header{
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
+  .header_full{
+    .logo{
+      > a{
+        display: block;
+        > img{
+          display: block;
+          margin-left: 468px;
+        }
+      }
+    }
+  }
+}
+
+#header{
+  nav{
+    width: 1280px;
+    .nav_back{
+      position: absolute;
+      height: 0px;
+      width: 100%;
+      top:100%;
+      left: 0;
+      transition: 0.3s;
+      background-color: #fff;
+    }
+  }
+}
+
+
+#header{
+  nav{
+    &:hover .nav_back {
+      height: 235px;
+    }
+    &:hover .depth_01 > li .depth_02{
+      height: 300px;
+    }
+    display: block;
+    width: 1280px;
+    &::after{
+      @include clear;
+    }
+    .depth_01{
+      float: right;
+      &::after{
+        @include clear;
+      }
+      > li{
+        float: left;
+        position: relative;
+        margin: 49px 106px 14px 0;
+        &:hover > a{
+          background-color: #d5c4a2;
+          color: #000;
+        }
+        > a{
+          color: #123d64;
+          font-size: 20px;
+          font-weight: bold;
+          display: block;
+          text-align: center;
+          font-weight: bold;
+          transition: 0.3s;
+          padding: 0 20px;
+        }
+        .depth_02{
+          position: absolute;
+          top: 100%;
+          left: 0%;
+          width: 100%;
+          height: 0;
+          transition: 0.3s;
+          overflow: hidden;
+          text-align: center;
+          margin-top: 14px;
+          > li{
+            > a{
+              color: #000;
+              font-weight: bold;
+              display: block;
+              width: 100%;
+              font-size: 14px;
+              padding: 15px 0;
+            }
+          }
+          > li:hover a{
+            color: #b4975a;
+            font-weight: bold;
+            font-size: 16px;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+// ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ헤더 끝ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+// ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ바디 시작ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+//메인배너
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: -2.25;
+    content: "";
+  }
+
+  .slick-prev:before, .slick-next:before {
+      font-family: 'slick';
+      font-size: 20px;
+      line-height: 1;
+      opacity: -2.25;
+      content: "";
+    }
+
+  #body .body_full  .slick-next:before {
+    content: "";
+  }
+
+
+#body{
+  .body_full{
+    .main_banner{
+      .main_img{
+        > a{
+          display: block;
+          img{
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@font-face {
+    font-family: 'SeoulHangangM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+//베스트아이템픽
+#body{
+  .body_full{
+    .best_product{
+      width: 1280px;
+      margin: 120px auto 0;
+      &::after{
+        @include clear;
+      }
+      >p{
+        font-size: 25px;
+        border-bottom: solid 2px #123d64;
+        padding: 5px;
+        font-family: 'SeoulHangangM';
+        margin: 0 0 0 28px;
+        >span{
+          float: right;
+          color: #888;
+          font-size: 15px;
+          margin: 11px 0 3px 0;
+        }
+      }
+      >ul{
+        float: right;
+        >li{
+          margin: 19px 0px 0 42px;
+          float: left;
+          >a{
+            display: block;
+            overflow: hidden;
+            border: solid 2px #123d64;
+            box-sizing: border-box;
+            border-radius: 50%;
+            &:hover > img{
+              background-color: #ddd;
+            }
+            >img{
+              display: block;
+              width: 274px;
+              transition: 0.3s;
+              &:hover{
+                transform: scale(1.2);
+                transform-origin: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@font-face {
+  font-family: 'SungDongMyungjo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/govs/sdgu/SungDongMyungjo/SungDongMyungjoR.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/govs/sdgu/SungDongMyungjo/SungDongMyungjoR.woff') format('woff');
+}
+//뉴아이템
+#body{
+  .body_full{
+    .new_product{
+      margin: 120px auto 0;
+      .new_01{
+        position: relative;
+        > a{
+          display: block;
+          >img{
+            display: block;
+            width: 100%;
+          }
+        }
+        .txt_01{
+          position: absolute;
+          top: 86px;
+          right: 445px;
+          font-size: 70px;
+          font-family: 'SungDongMyungjo';
+        }
+        .txt_02{
+          position: absolute;
+          top: 167px;
+          right: 445px;
+          font-size: 55px;
+          font-family: 'SungDongMyungjo';
+        }
+      }
+    }
+  }
+}
+
+#body{
+  .body_full{
+    .event_day{
+      width: 1280px;
+      margin: 120px auto;
+      &::after{
+        @include clear;
+      }
+      >p{
+        font-size: 25px;
+        border-bottom: solid 2px #123d64;
+        padding: 5px;
+        font-family: 'SeoulHangangM';
+        margin: 0 0 20px 0;
+        >span{
+          float: right;
+          color: #888;
+          font-size: 15px;
+          margin: 11px 0 3px 0;
+        }
+      }
+      >ul{
+        float: right;
+        >li{
+          float: left;
+          width: 24%;
+          margin: 0 0 0 10px;
+          >a{
+            display: block;
+            >img{
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#body{
+  .body_full{
+    .only_you{
+      width: 1280px;
+      margin: 120px auto;
+      &::after{
+        @include clear;
+      }
+      .md{
+        width: 50%;
+        float: left;
+        &::after{
+          @include clear;
+        }
+        >p{
+          font-size: 25px;
+          border-bottom: solid 2px #123d64;
+          padding: 5px;
+          font-family: 'SeoulHangangM';
+          margin: 0 52px 20px 0;
+          >span{
+            float: right;
+            color: #888;
+            font-size: 15px;
+            margin: 11px 0 3px 0;
+          }
+        }
+        >ul{
+          float: right;
+          &::after{
+            @include clear;
+          }
+          >li{
+            float: left;
+            width: 45%;
+            margin: 0 10px 10px 0px;
+            >a{
+              display: block;
+              >img{
+              display: inline-block;
+              width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#body{
+  .body_full{
+    .only_you{
+      .gongji{
+        width: 50%;
+        float: right;
+        margin-bottom: 102px;
+        margin-top: 20px;
+        >p{
+          font-size: 25px;
+          border-bottom: solid 2px #123d64;
+          padding: 5px;
+          font-family: 'SeoulHangangM';
+          margin: 0 3px 20px 0;
+          >span{
+            float: right;
+            color: #888;
+            font-size: 15px;
+            margin: 11px 0 3px 0;
+          }
+        }
+        >ul{
+          >li{
+            border-bottom: solid 1px #ddd;
+            line-height: 34px;
+             font-family: 'NEXON Lv1 Gothic OTF';
+            >span{
+              display: inline-block;
+              background-color: #000;
+              height: 5px;
+              width: 5px;
+              border-radius: 50%;
+              margin: 0 9px 4px 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//뉴스레터
+#body{
+  .body_full{
+    .news_letter{
+      margin: 120px auto 70px;
+      position: relative;
+      >a{
+        display: block;
+        img{
+        display: block;
+        width: 100%;
+        }
+      }
+      .news{
+        position: absolute;
+        top: 194px;
+        right: 684px;
+        font-size: 55px;
+        font-family: 'SungDongMyungjo';
+        color: #fff;
+        font-weight: bold;
+      }
+      .letter{
+        position: absolute;
+        top: 257px;
+        right: 736px;
+        font-size: 55px;
+        font-family: 'SungDongMyungjo';
+        color: #fff;
+        font-weight: bold;
+      }
+      .input_box{
+        position: absolute;
+        top: 345px;
+        right: 537px;
+        &::after{
+          @include clear;
+        }
+        ul{
+          float: left;
+          li{
+            float: left;
+            margin: 0 19px 0 26px;
+            input{
+              width: 259px;
+              height: 48px;
+              text-indent: 7px;
+              border: none;
+              outline: none;
+            }
+            .news_btn{
+              display: block;
+              color: #000;
+              background-color: #fff;
+              line-height: 27px;
+              padding: 10px 13px;
+              &:hover{
+                color: #000;
+                font-weight: bold;
+                background-color: #038260;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@font-face {
+    font-family: 'designhouseOTFLight00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/designhouseOTFLight00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#body{
+  .body_full{
+    .a_s{
+      position: relative;
+      margin: 0 auto 70px;
+      >a{
+        display: block;
+        >img{
+          display: block;
+          width: 100%;
+        }
+      }
+      > p{
+        position: absolute;
+        top: 119px;
+        left: 362px;
+        font-size: 40px;
+        font-family: 'designhouseOTFLight00';
+        font-weight: bold;
+      }
+      >.btn_as{
+        position: absolute;
+        top: 244px;
+        left: 362px;
+        font-size: 20px;
+        color: #000000;
+        &:after{
+          content: "";
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          border-top: solid 2px #000;
+          border-right: solid 2px #000;
+          transform: rotate(45deg);
+          margin: 93px 0 0 3px;
+          position: absolute;
+          top: calc(100% - 108px);
+        }
+      }
+    }
+  }
+}
+
+// ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ푸터 시작ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+#footer{
+  .footer_full{
+    .footer_line{
+      background-color: #bbbbbb;
+      > ul{
+        width: 1280px;
+        margin: 0 auto;
+        &::after{
+          @include clear;
+        }
+        > li{
+          float: left;
+          > a{
+            display: block;
+            margin: 10px 5px;
+            color: #000000;
+            > span{
+              height: 10px;
+              width: 1px;
+              background-color: #000;
+              display: inline-block;
+              margin-left: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer{
+  background-color: #eaeaea;
+  .footer_full{
+    .site_map{
+      width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+      > p{
+        line-height: 27px;
+        font-size: 14px;
+        > span{
+          display: inline-block;
+          width: 3px;
+          height: 3px;
+          background-color: #000;
+          border-radius: 50%;
+          margin : 0 6px 3px;
+        }
+      }
+    }
+  }
+}
+
+
+//ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+@charset "UTF-8";
+@import "../../scss/mixin.scss";
+
+
+// #f1ebd6; #f6f6f6;
+
+
+#header{
+  .header_bg{
+    background-color: #f1e3c4;
+    .header_ct{
+      width: 1280px;
+      margin: 0 auto;
+      > h1{
+        margin: 0 0 -72px 515px;
+        padding: 39px 0 0px 0;
+        >a{
+          display: block;
+          width: 250px;
+          img{
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .utill{
+        .depth_01{
+          >li{
+            >a{
+              color: #4a433b;
+              &:hover > .depth_02{
+              }
+              .tw_0{
+                display: inline-block;
+                background-color: #9b9b9b;
+                width: 2px;
+                height: 18px;
+                margin: 0 20px;
+              }
+            }
+            .depth_02{
+              >li{
+                >a{
+                }
+              }
+            }
+          }
+        }
+      }
+      nav{
+        &::after{
+          @include clear;
+        }
+        >ul{
+          float: right;
+          >li{
+            float: left;
+            a{
+              color: #4a433b;
+              margin: 0 0 0 18px;
+              padding: 8px 2px 3px 5px;
+              line-height: 51px;
+              font-family: 'NEXON Lv1 Gothic OTF';
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#body_02{
+  .full_body{
+    .slick-prev{
+      left: 0;
+    }
+    .slick-next{
+      right: 0;
+    }
+
+  }
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: -2.25;
+    content: "";
+  }
+
+  .slick-prev:before, .slick-next:before {
+      font-family: 'slick';
+      font-size: 20px;
+      line-height: 1;
+      opacity: -2.25;
+      content: "";
+    }
+
+  #body_02 .body_full  .slick-arrow:before {
+    content: "";
+  }
+
+  #body_02 .slick-next:before {
+    content: "";
+}
+
+
+
+#body_02{
+  .full_body{
+    .main_banner{
+      .banner_img{
+        > a{
+          display: block;
+          >img{
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#body_02{
+  .full_body{
+    .yeyack{
+      width: 1280px;
+      margin: 120px auto 0;
+      background-color: #dddddd45;
+      position: relative;
+      &::after{
+        @include clear;
+      }
+      .a_01{
+        float: left;
+        color: #d69911;
+        line-height: 70px;
+        margin-left: 20px;
+        font-size: 18px;
+        font-family: 'NEXON Lv1 Gothic OTF';
+      }
+      .a_02{
+        float: right;
+        color: #d69911;
+        line-height: 70px;
+        margin-right: 36px;
+        font-size: 18px;
+        font-family: 'NEXON Lv1 Gothic OTF';
+        &:after{
+          content: "";
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          border-top: solid 2px #d69911;
+          border-right: solid 2px #d69911;
+          transform: rotate(45deg);
+          margin: 93px 0 0 3px;
+          position: absolute;
+          top: calc(100% - 134px);
+        }
+      }
+    }
+  }
+}
+
+
+#body_02{
+  .full_body{
+    .special_offer{
+      width: 1280px;
+      margin: 120px auto;
+      &::after{
+        @include clear;
+      }
+      >p{
+        text-align: center;
+        padding-top: 9px;
+        font-size: 25px;
+      }
+      >span{
+        width: 500px;
+        height: 2px;
+        background-color: #d69911;
+        display: inline-block;
+        margin: 0 0 0 384px;
+      }
+      .left{
+        margin-top: 15px;
+        float: left;
+        .h_p{
+          display: block;
+          >img{
+            display: block;
+            margin: 0 0 0 24px;
+          }
+        }
+        .hh_p{
+          float: left;
+          display: block;
+          margin: 23px -3px 0 24px;
+          >img{
+            display: block;
+          }
+        }
+      }
+      .right{
+        float: right;
+        margin-top: 15px;
+        > a{
+          display: block;
+          >img{
+            display: block;
+            margin: 11px 31px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+#body_02{
+  .full_body{
+    .member{
+      background-color: #f6f6f6;
+      margin-top: 120px;
+      .member_02{
+        width: 1280px;
+        margin: 0 auto;
+        padding-top: 51px;
+        >p{
+          text-align: center;
+          padding-top: 9px;
+          font-size: 25px;
+        }
+        >span{
+          width: 500px;
+          height: 2px;
+          background-color: #d69911;
+          display: inline-block;
+          margin: 0 0 0 384px;
+        }
+      }
+      .member_03{
+        width: 1280px;
+        margin: 34px 0 0 425px;
+        >ul{
+          >li{
+            float: left;
+            width: 33.33%;
+            >img{
+            }
+          }
+        }
+        >p{
+          text-align: center;
+          font-size: 18px;
+          padding: 69px;
+          margin: 0 196px 3px 3px;
+          line-height: 33px;
+          font-family: 'NEXON Lv1 Gothic OTF';
+        }
+      }
+    }
+  }
+}
+
+#body_02{
+  .full_body{
+    .video{
+      width: 1280px;
+      margin: 120px auto 0;
+      >.p_tag{
+        text-align: center;
+        padding-top: 9px;
+        font-size: 25px;
+      }
+      >span{
+        width: 500px;
+        height: 2px;
+        background-color: #d69911;
+        display: inline-block;
+        margin: 0 0 0 384px;
+      }
+      >iframe{
+        margin-top: 15px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+#footer_02{
+  margin: 120px auto 0;
+  width: 100%;
+  background-color: #d69911;
+  padding: 30px 0;
+  .footer_box{
+    width: 1280px;
+    margin: 0 auto;
+    &::after{
+      @include clear;
+    }
+    .yackwan{
+      float: left;
+      margin: 0 0 0 0;
+      >a{
+        color: #000;
+        >span{
+          display: inline-block;
+          background-color: #000;
+          width: 2px;
+          height: 12px;
+          margin: 0 8px;
+        }
+      }
+    }
+    .yack_right{
+      float: right;
+      >a{
+        color: #626161;
+        margin: 0 8px;
+      }
+    }
+    >span{
+      width: 100%;
+      height: 1px;
+      background-color: #976e13;
+      display: inline-block;
+      margin: 10px 0;
+    }
+    >p{
+      width: 100%;
+      display: block;
+      line-height: 30px;
+      >span{
+        display: inline-block;
+        background-color: #000;
+        width: 2px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+//ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+#header_03{
+  width: 1280px;
+  margin: 3px auto 24px;
+  >h1{
+    width: 20%;
+    &::after{
+      @include clear;
+    }
+    >img{
+      float: left;
+      margin: 0 0 -24px 0;
+    }
+  }
+  >nav{
+    float: right;
+    margin: -6px 0 10px 0;
+    >a{
+      float: left;
+      display: block;
+      color: #000;
+      font-size: 15px;
+      margin: 0 40px 0 0;
+      font-family: 'NEXON Lv1 Gothic OTF';
+      &:hover{
+        color: #0b388c;
+        font-weight: bold;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+
+#body_03{
+  overflow: hidden;
+  .main_bn{
+    position: relative;
+    >a{
+      display: block;
+      >img{
+        display: block;
+        width: 100%;
+      }
+    }
+    .btn{
+      position: absolute;
+      top: 481px;
+      left: 284px;
+      background-color: #71ade4;
+      padding: 13px 18px;
+      color: #fff;
+      font-weight: bold;
+      &:hover{
+        background-color: #1852c5;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+#body_03{
+  .two_sec{
+    margin: 120px auto 0;
+    width: 1280px;
+    &::after{
+      @include clear;
+    }
+    .iframe_bmax{
+      float: left;
+      margin: 0 0 0 0px;
+      >p{
+        font-size: 27px;
+        margin-bottom: 10px;
+        color: #000;
+        >a{
+          float: right;
+          font-size: 17px;
+          color: #000;
+          margin-top: 13px;
+        }
+      }
+      >iframe{
+      }
+    }
+  }
+  .ad{
+    float: right;
+    margin: 42px 75px 0 0;
+    text-align: left;
+    .ad_01{
+      background-color: #d7dcfb;
+      width: 290px;
+      height: 244px;
+      >p{}
+      >h4{}
+      >span{}
+    }
+    .ad_02{
+      background-color: #ccdbf9;
+      width: 290px;
+      height: 244px;
+      >p{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 45px 0;
+      }
+      >h4{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 45px 0;
+      }
+      >span{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 45px 0;
+      }
+    }
+  }
+}
+
+@font-face {
+    font-family: 'Wemakeprice-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#body_03{
+  .third_sec{
+    background-color: #f3f3f5;
+    padding-bottom: 26px;
+    .third{
+      width: 1280px;
+      margin: 120px auto 0;
+      text-align: center;
+      &::after{
+        @include clear;
+      }
+      >p{
+        font-size: 27px;
+        padding: 30px;
+        font-family: 'Wemakeprice-Bold';
+        span{
+          font-size: 39px;
+          font-weight: bold;
+          color: #55a6da;
+        }
+      }
+      >ul{
+        width: 1280px;
+        margin: 50px auto;
+        float: right;
+        >li{
+          width: 33.333%;
+          float: left;
+          &:after{
+            display: inline-block;
+            width: 2px;
+            height: 60px;
+            background-color: #000;
+          }
+          >p{
+            font-size: 35px;
+            line-height: 40px;
+            font-family: 'Wemakeprice-Bold';
+            >span{
+              color: #55a6da;
+              font-size: 50px;
+            }
+          }
+          .ex{
+            font-size: 21px;
+            line-height: 30px;
+            font-family: 'Wemakeprice-Bold';
+          }
+        }
+      }
+    }
+  }
+}
+
+#body_03{
+  .third_sec{
+    .bottom{
+      width: 1280px;
+      margin: 0 auto;
+      &::after{
+        @include clear;
+      }
+      .line_up{
+        width: 50%;
+        float: left;
+        margin-left: 130px;
+        >p{
+          font-size: 40px;
+          font-family: 'Wemakeprice-Bold';
+        }
+        .ma_bn{
+          margin-top: 15px;
+          .m_bs{
+            position: relative;
+            >a{
+              >img{}
+            }
+            .text_ad{
+              position: absolute;
+              top: 176px;
+              left: 40px;
+              font-weight: bold;
+              font-size: 42px;
+              .text_s{
+                position: absolute;
+                top: -95px;
+                left: 0px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .line_right{
+        float: right;
+        width: calc(50% - 204px);
+        margin-top: 40px;
+        margin-right: 65px;
+        .top{
+          width: 80%;
+          >a{
+            >img{
+
+            }
+          }
+        }
+        .bottom{
+          >a{
+            >img{
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#body_03{
+  .third_sec{
+    .bottom{
+      .line_up{
+        .slick-next{
+        right: 115px;
+        }
+        .slick-prev{
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.slick-next {
+    display: none;
+}
+
+#footer_03{
+  .footer{
+    background-color: #fff;
+    width: 100%;
+    >a{
+      display: block;
+      &::after{
+        @include clear;
+      }
+      >img{
+        display: block;
+        float: right;
+      }
+    }
+    .footer_con{
+      width: 1280px;
+      padding: 20px 0;
+      margin: 0 auto;
+      >a{
+        display: block;
+        >img{
+          display: block;
+          float: left;
+        }
+      }
+      >p{
+        line-height: 20px;
+        text-align: center;
+        >span{
+          display: inline-block;
+          background-color: #000;
+          width: 2px;
+          height: 12px;
+        }
+      }
+    }
+  }
+}
